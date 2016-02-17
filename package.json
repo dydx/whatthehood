@@ -1,0 +1,19 @@
+{
+  "name": "whatthehood",
+  "version": "0.1.0",
+  "description": "simple geolocation service to tell if you're in the hood",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dydx/whattheood.git"
+  },
+  "author": "Josh Sandlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dydx/whattheood/issues"
+  },
+  "homepage": "https://github.com/dydx/whattheood#readme"
+}

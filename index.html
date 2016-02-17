@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What The Hood</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body ng-app="ghetto">
+  <div class="container" ng-controller="ghettoCtrl as vm">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="page-header">
+        <h1>What The Hood <small>are you in the ghetto?</small></h1>
+      </div>
+
+      <div class="hidden-md hidden-lg">
+        <div class="actions">
+          <div class="btn btn-block btn-success">Am I In The Ghetto?</div>
+        </div>
+        
+        <div class="actions">
+          <div class="btn btn-block btn-danger">I Am In The Ghetto!</div>
+        </div>
+      </div>
+
+      <div class="actions hidden-xs hidden-sm">
+        <div class="btn-group btn-group-lg btn-group-justified">
+          <span class="btn btn-default btn-success" ng-click="vm.amI();">Am I In The Ghetto?</span>
+          <span class="btn btn-default btn-danger" ng-click="vm.iAm();">I Am In The Ghetto!</span>
+        </div>
+      </div>
+
+      <div class="panel panel-danger" id="ghetto">
+        <div class="panel-heading">Danger</div>
+        <div class="panel-body text-center">You are in the ghetto!</div>
+      </div>
+
+      <div id="not-ghetto" class="panel panel-success">
+        <div class="panel-heading">Its Alright</div>
+        <div class="panel-body text-center">You are not in the ghetto</div>
+      </div>
+
+      <div id="inform" class="panel panel-warning">
+        <div class="panel-heading">Thanks. Now Run!</div>
+        <div class="panel-body text-center">Alright; thanks for telling us. Now GTFO</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
