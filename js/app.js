@@ -52,6 +52,8 @@
 
         if (vm.results.length > 1) {
           vm.inThaHood = true;
+        } else {
+          vm.inThaHood = false;
         }
       };
 
