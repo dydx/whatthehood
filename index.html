@@ -27,11 +27,11 @@
 
       <div class="hidden-md hidden-lg">
         <div class="actions">
-          <div class="btn btn-block btn-success">Am I In The Ghetto?</div>
+          <div class="btn btn-block btn-success" ng-click="vm.amI();">Am I In The Ghetto?</div>
         </div>
-        
+
         <div class="actions">
-          <div class="btn btn-block btn-danger">I Am In The Ghetto!</div>
+          <div class="btn btn-block btn-danger" ng-click="vm.iAm();">I Am In The Ghetto!</div>
         </div>
       </div>
 
@@ -42,19 +42,16 @@
         </div>
       </div>
 
-      <!-- Display that they are in the hood after they have clicked AND geospacial query says they are in the hood -->
       <div class="panel panel-danger" ng-show="vm.inThaHood && vm.hoodChecked">
         <div class="panel-heading">Danger</div>
         <div class="panel-body text-center">You are in the ghetto!</div>
       </div>
 
-      <!-- Display that they are not in the hood after they have clicked AND geospacial query says they are not in the hood -->
       <div class="panel panel-success" ng-show="!vm.inThaHood && vm.hoodChecked">
         <div class="panel-heading">Its Alright</div>
         <div class="panel-body text-center">You are not in the ghetto</div>
       </div>
 
-      <!-- Display that they have submitted their hood status -->
       <div class="panel panel-warning" ng-show="vm.hoodNotified">
         <div class="panel-heading">Thanks. Now Run!</div>
         <div class="panel-body text-center">Alright; thanks for telling us. Now GTFO</div>

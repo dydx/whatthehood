@@ -45,7 +45,7 @@
         $scope.$on("SEARCH:KEY_ENTERED", function (event, key, loc, distance) {
           vm.results.push({key: key, loc: loc, distance: distance});
 
-          if (distance > 5) {
+          if (distance > 1) {
             geoQueryCallback.cancel();
           }
         });
